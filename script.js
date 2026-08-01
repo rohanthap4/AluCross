@@ -1,8 +1,8 @@
 //Audios System
 const audioFiles = {
-    click: '/Assests/Click.mp3',
-    win: '/Assests/Win.mp3',
-    draw: '/Assests/draw.mp3'
+    click: 'Click.mp3',
+    win: 'Win.mp3',
+    draw: 'draw.mp3'
 }
 
 const audioPool = {
