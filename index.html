@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alu Cross - Win against My Ai</title>
+    <link rel="stylesheet" href="/Codes/style.css">
+    <link rel="shortcut icon" href="/Assests/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">ALU CROSS</h1>
+        <p class="subtitle">Classic Tic Tac Toe  Nepali Style</p>
+
+        <div class="menu" id="menu">
+            <div class="menu-label">Select Game Mode</div>
+            <div class="mode-buttons">
+                <button class="btn btn-mode" data-mode="pvp">Player vs Player</button>
+                <button class="btn btn-mode" data-mode="ai">AI vs Player</button>
+            </div>
+        </div>
+
+        <div class="game-section" id="gameSection">
+            <div class="scoreboard">
+                <div class="score-item">
+                    <div class="score-label">Player X</div>
+                    <div class="score-value" id="scoreX">0</div>
+                </div>
+                <div class="score-item">
+                    <div class="score-label" id="scoreOLabel">Player O</div>
+                    <div class="score-value" id="scoreO">0</div>
+                </div>
+                <div class="score-item">
+                    <div class="score-label">Draws</div>
+                    <div class="score-value" id="scoreDraw">0</div>
+                </div>
+            </div>
+
+            <div class="game-status" id="gameStatus"></div>
+            <div class="board-container">
+                <div class="board" id="board">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn btn-action btn-restart" id="restartBtn">Restart Round</button>
+                <button class="btn btn-action btn-reset" id="resetBtn">Reset Score</button>
+                <button class="btn btn-action btn-back" id="backBtn">Back to Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-message" id="modalMessage"></div>
+            <div class="modal-buttons">
+                <button class="btn-modal" id="modalContinueBtn">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/Codes/script.js"></script>
+</body>
+</html>
